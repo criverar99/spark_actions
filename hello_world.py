@@ -4,7 +4,7 @@ from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("HelloWorld").getOrCreate()
 
 #Use sql() to write a raw SQL query
-df = spark.sql("SELECT 'Hello World! AS Hello'")
+df = spark.sql("SELECT 'Hello World!' AS Hello")
 
 # Print the dataframe
 df.show()
