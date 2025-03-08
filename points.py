@@ -24,6 +24,12 @@ if __name__ == "__main__":
     print("int : ")
     print(rdd_split_int.take(5))
 
+    
+    results = rdd_split_int.toJSON().collect()    
+
+    with open('results/data.json', 'w') as file:
+        json.dump(results, file)
+
     print("end process ... ")
 
     spark.stop()
