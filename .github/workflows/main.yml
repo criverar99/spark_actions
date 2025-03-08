@@ -35,3 +35,4 @@ jobs:
         hadoop-version: '3'
 
     - run: spark-submit --version
+    - run: ls -la
